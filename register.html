@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="bootsrap/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/all.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/owl.carousel.min.css">
+    <link rel="stylesheet" href="CSS/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body>
+    <div class="loader">
+        <div class="loader1"></div>
+        <div class="loader2"></div>
+        <div class="loader3"></div>
+    </div>
+<main class="container-fluid">
+    <header class="container-fluid navbar-expand-md" id="Home">
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Status</h4>
+                <span></span>
+                <a href="#">Find your right path!</a>
+                <div class="search">
+                    <input type="search" placeholder="Search for status" class="form-conntrol">
+                    <button class="searchbutton" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-pink bg-white  mt-1">
+        <a href="register.html" class="navbar-brand register"><i class="fas fa-id-card"></i>Register and leave your
+            favourite
+            status!
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav position-sticky">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Galery</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Story</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+<!--  Registeration part-->
+
+    <div class="row">
+    <div class="col-md-12">
+        <ul class="nav nav-pills justify-content-center">
+            <li class="nav-item"><a href="#step4" class="nav-link button" data-toggle="pill">Step 1</a></li>
+            <li class="nav-item"><a href="#step5" class="nav-link button" data-toggle="pill">Step 2</a></li>
+            <li class="nav-item"><a href="#step6" class="nav-link button" data-toggle="pill">Step 3</a></li>
+        </ul>
+        <form action="#" class="form-group">
+        <div class="tab-content">
+            <div id="step4" class="tab-pane fade shadow-blue mb-3 col-md-8 offset-2">
+                <h5 class="post text-info text-center mt-3 text-monospace">Personal information</h5>
+                <label>Your Name</label>
+                <input type="text" required class="d-block p-2 mt-2 form-control " placeholder="Your name...">
+                <label>Last name</label>
+                <input type="text" required class="d-block p-2 mt-2 form-control" placeholder="Last name...">
+                <label>Sharifingiz</label>
+                <input type="text" required class="d-block p-2 mt-2 form-control" placeholder="Sharifingiz">
+                 <li  class="nav nav-item"><a href="#step5" class="nav-link button text-decoration-none" data-toggle="pill">Next</a></li>
+            </div>
+            <div id="step5" class="tab-pane fade shadow-blue mb-3 col-md-8 offset-2">
+                <h5 class="post text-info text-center mt-3 text-monospace">Personal password</h5>
+                <label>Password</label>
+                <input type="password" id="password" required class="d-block p-2 mt-2 form-control" placeholder="Your password">
+                <label>Check password</label>
+                <input type="password" id="repassword" required class="d-block p-2 mt-2 form-control" placeholder="Repeat password">
+                <p id="password1"></p>
+                 <li class="nav nav-item"><a href="#step6" class="nav-link button" onclick="checkPassword()" data-toggle="pill">Next</a></li>
+            </div>
+            <div class="tab-pane fade shadow-blue mb-3 col-md-8 offset-2" id="step6">
+                <h5 class="post text-info  mt-3 text-center text-monospace">Additional information</h5>
+                <label class="text-center">Date of birth</label>
+                <input type="date" required class="d-block p-2 mt-3" style="background-color: pink">
+                <label>Gender</label>
+                <input type="radio" id="male" required class="d-block  mt-3" name="jins">
+                <label for="male">Male</label>
+                <input type="radio" id="female" required class="d-block p-2 mt-3" name="jins">
+                <label for="female">Female</label>
+                <input type="submit" class="btn button mt-5 ml-5" value="Register">
+            </div>
+        </div>
+        </form>
+    </div>
+
+    <div class="toast" data-autohide="false">
+        <div class="toast-header">
+            <strong class="mr-auto text-primary">Toast Header</strong>
+            <small class="text-muted">5 mins ago</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+        </div>
+        <div class="toast-body">
+            Some text inside the toast body
+        </div>
+    </div>
+    <div class="toast">
+        <div class="toast-header">
+            Toast Header
+        </div>
+        <div class="toast-body">
+            Some text inside the toast body
+        </div>
+    </div>
+
+</div>
+
+    <!--    Footer Part-->
+
+    <footer>
+        <div class="container modal-footer">
+        <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <p><a href="#Galery" class="text-decoration-none">Galery</a></p>
+                    <p><a href="#" class="text-decoration-none" >Team</a></p>
+                    <p><a href="#" class="text-decoration-none">Pictures</a></p>
+                    <p><a href="#" class="text-decoration-none">Stories</a></p>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <p><a href="#Stories" class="text-decoration-none">Stories</a></p>
+                    <p><a href="#" class="text-decoration-none">Thoughts</a></p>
+                    <p><a href="#" class="text-decoration-none">Psychology</a></p>
+                    <p><a href="#" class="text-decoration-none">History</a></p>
+                    <p><a href="#" class="text-decoration-none">Politics</a></p>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <h3 class="text-center text-monospace  post text-info">Watch out us in social sites</h3>
+                    <a href="https://facebook.com" class="text-decoration-none p-2"><img src="image/facebook.svg" width="15%" alt=""></a>
+                    <a href="https://instagram.com" class="text-decoration-none p-2"><img src="image/instared.svg" width="15%" alt=""></a>
+                    <a href="https://telegram.org" class="text-decoration-none p-2"><img src="image/teleg.svg" width="15%" alt=""></a>
+                </div>
+                <div class="col-lg-3 col-md-6 tag-span">
+                    <h1 class="text-center text-monospace  post text-info">Tags</h1>
+                    <a href="">Team</a>
+                    <a href="">book</a>
+                    <a href="#">picture</a>
+                    <a href="#">theme</a>
+                    <a href="#">cinema</a>
+                    <a href="#">flower</a>
+                    <a href="#">papper</a>
+                    <a href="#">pencil</a>
+                    <a href="#">candle</a>
+                    <a href="#">interesting</a>
+                    <a href="#">activity</a>
+                    <a href="#">enjoy</a>
+                    <a href="#">hard work</a>
+                    <a href="#">find way</a>
+                    <a href="#">make money</a>
+                    <a href="#">art</a>
+                    <a href="#">flower</a>
+                    <a href="#">cognitive</a>
+                    <a href="#">design</a>
+                    <a href="#">pop</a>
+                    <a href="#">circle</a>
+                    <a href="#">about</a>
+                    <a href="#">mathematics</a>
+                    <a href="#">psychology</a>
+                    <a href="#">Islam</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <p class="text-center text-info post allRight">© All rights reserved
+        <script>document.write(new Date().getFullYear());</script></p>
+</main>
+</body>
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+      $(document).ready(function(){
+      $(".loader").css("display", "none");
+   });
+
+    function checkPassword() {
+      let password = document.getElementById("password").value;
+      let repassword = document.getElementById("repassword").value;
+      let txt;
+      if(password != repassword){
+          txt = "Password is different!"
+      }else if (password == "" || repassword == ""){
+          txt = "check your password"
+      }else{
+          txt = "...wait"
+      }
+      document.getElementById("password1").innerHTML = txt;
+    }
+</script>
+</html>

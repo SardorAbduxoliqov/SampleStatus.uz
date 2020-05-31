@@ -1,0 +1,13 @@
+@media only screen and (max-width: 992px){
+    .col-md-8{
+        max-width: 600px;
+        margin-left: auto;
+    }
+    nav .navbar:first-child{
+        display: none;
+        background-color: red;
+    }
+    textarea{
+        width: 100%;
+    }
+}

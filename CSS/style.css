@@ -1,0 +1,541 @@
+header {
+    background-color: #ffffff;
+    padding: 10px 15px;
+    color: saddlebrown;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: cursive;
+    float: right;
+    box-sizing: border-box;
+}
+header span{
+    margin-left: 18%;
+    border: 1px solid pink;
+}
+@media only screen and (max-width: 992px) {
+    header a{
+        display: none;
+    }
+
+}
+header h4{
+    font-family: cursive;
+    font-size: 150%;
+    margin-left: 3%;
+    text-shadow: 2px 2px 5px pink;
+    text-transform: uppercase;
+    color: deepskyblue;
+    box-sizing: border-box;
+}
+header a{
+    margin-left: 15%;
+    font-size: 110%;
+    color: deepskyblue;
+}
+
+header a:hover{
+    text-decoration: none;
+    text-shadow: 2px 2px 5px pink;
+    color: deepskyblue;
+
+}
+.search {
+    float: right;
+
+}
+header input, .searchbutton{
+    background-color: pink;
+    border-radius: 10px;
+    outline: none;
+    color: deepskyblue;
+}
+header input, .searchbutton:active{
+    border-radius: 10px;
+    outline: none;
+}
+header input, .searchbutton:focus{
+    outline: none;
+    box-shadow: none;
+}
+h4{
+    display: inline;
+}
+
+/* navbar qismi  */
+
+nav {
+    background-color: #fff;
+    box-sizing: border-box;
+}
+nav a{
+    color: pink;
+    padding: 15px 25px;
+    font-size: 20px;
+    position: relative;
+    font-family: cursive;
+    letter-spacing: 3px;
+}
+nav .fa-id-card{
+    margin: 10px 5px;
+    box-sizing: border-box;
+}
+nav a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    transition: all 0.8s ease-in-out;
+    background-color: deepskyblue;
+    bottom: 0;
+    left: 0;
+    text-decoration: none;
+}
+nav .register:hover .fa-id-card{
+    color: deepskyblue;
+    box-sizing: border-box;
+}
+nav .register:hover::after{
+    width: 93.5%;
+}
+nav a:hover::after{
+    width: 93%;
+}
+nav a:hover{
+    text-decoration: none;
+    color: deepskyblue;
+    text-shadow: 2px 2px 3px pink;
+}
+.position-sticky{
+    margin-left: 12%;
+}
+
+/*carousel qismi*/
+@media only screen and (max-width: 992px) {
+  #section-1 {
+      display: none;
+  }
+}
+
+
+.carousel-inner img{
+    position: relative;
+    width: 100%;
+}
+section h4 {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    color: blue;
+    font-family: "Snap ITC";
+}
+section h4 span:not(.type){
+    color: deepskyblue;
+    font-size: 200%;
+    padding: 10%;
+    margin-left: 15%;
+    letter-spacing: 70px;
+    text-shadow: 1px 2px gray;
+}
+section h4 span:hover:not(.type){
+    color: pink;
+    transition: all 0.8s;
+    cursor: pointer;
+    text-decoration: deepskyblue;
+    font-size: 250%;
+}
+section .type{
+    font-size: 100%;
+    text-shadow: 1px 2px gray;
+    color: deepskyblue;
+    letter-spacing: 19px;
+    position: relative;
+}
+section .type::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: deepskyblue;
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+section .type:hover::after{
+    width: 100%;
+    opacity: 1;
+}
+section .type:hover{
+    color: pink;
+    cursor: pointer;
+    font-size: 120%;
+    transition: 0.8s;
+}
+
+
+/*About Us*/
+
+section .elementh1{
+    color: deepskyblue;
+    font-family: "Apple Color Emoji";
+    font-stretch: extra-expanded;
+    letter-spacing: 25px;
+}
+section .elementh1:hover{
+    text-shadow: 4px 3px 4px pink;
+    
+}
+.elementh2{
+    color: deepskyblue;
+    font-family: "Apple Color Emoji";
+    font-stretch: extra-expanded;
+    letter-spacing: 23px;
+}
+.elementh2:hover{
+    text-shadow: 4px 3px 4px pink;
+}
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: pink;
+    border: none;
+    color: deepskyblue;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -17px;
+    transition: 0.3s;
+}
+
+.button:hover span {
+    padding-right: 10px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: deepskyblue;
+    color: pink;
+    cursor: pointer;
+    padding: 7px 7px;
+    
+}
+.button:active{
+    border-bottom: 1px solid deepskyblue;
+    margin-top: 2px;
+    padding-top:  6px;
+    padding-bottom: 3px;
+}
+.button:focus{
+    outline: none;
+    box-shadow: none;
+}
+.collapse{
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 25px;
+    font-family: "Times New Roman";
+    font-size: 20px;
+}
+
+/*Galery*/
+
+
+.section-3 {
+    width: 100%;
+    background-color: white;
+    padding: 1rem;
+}
+.section-3 .container-fluid .row .flip-box {
+    background-color: pink;
+    width: 300px;
+    height: 400px;
+    perspective: 800px;
+
+}
+.section-3 .container-fluid .row .flip-box .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 0.8s;
+    transition-delay: 0.5s;
+    transform-style: preserve-3d;
+}
+.section-3 .container-fluid .row .flip-box .flip-box-inner .flip-box-front, body main .section-3 .container-fluid .row .flip-box .flip-box-inner .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.section-3 .container-fluid .row .flip-box .flip-box-inner .flip-box-front {
+    background-color: #444;
+    color: deepskyblue;
+}
+body main .section-3 .container-fluid .row .flip-box .flip-box-inner .flip-box-front img {
+    width: 100%;
+    height: 80%;
+}
+.flip-box .flip-box-inner .author{
+    position: absolute;
+    bottom: -4px;
+    left: 5%;
+    right: 5%;
+    color: #fff;
+    font-size: 20px;
+    box-sizing: border-box;
+    margin: 0;
+    letter-spacing: 0.3px;
+    text-decoration: underline;
+    font-family: cursive;
+}
+.flip-box .flip-box-inner .published{
+    position: absolute;
+    left: 5%;
+    line-height: 4px;
+    bottom: 20%;
+    color: #ffffff;
+    text-align-last: left;
+    background-origin: border-box;
+    letter-spacing: 1px;
+}
+.section-3 .container-fluid .row .flip-box .flip-box-inner .flip-box-back {
+    overflow: auto;
+    color: white;
+    transform: rotateY(180deg);
+}
+.section-3 .container-fluid .row .flip-box .flip-box-inner .flip-box-back .card .card-body p {
+    text-align: justify !important;
+}
+.section-3 .container-fluid .row .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+/*Stories*/
+
+.bgimg{
+    background-image: url("monochrome-photo-of-math-formulas-3729557.jpg");
+    height: 400px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    position: relative;
+}
+.writing{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.stories{
+    letter-spacing: 10px;
+    color: deepskyblue;
+    font-size: 50px !important;
+
+
+}
+
+/* class main after Stories image */
+
+.main{
+    background-color: pink;
+    height: 150px;
+    width: 100%;
+    text-align: center !important;
+    padding-top: 16px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    color: deepskyblue;
+}
+.justify {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    float: left;
+    box-sizing: border-box;
+    width: 24.999999%;
+}
+.x-large{
+    font-size: 24px !important;
+}
+.new{
+    position: absolute;
+    top: 0;
+    left: 60%;
+    background-color: #222;
+    color: #ffffff;
+    border-radius: 3px;
+}
+.newLove{
+    position: relative;
+}
+
+
+/* Commens and Java script part Post */
+.post{
+    padding: 12px 15px;
+    box-sizing: border-box;
+    color: deepskyblue;
+    text-align: center;
+    font-family: cursive;
+}
+.post:hover{
+    font-family: cursive;
+    font-style: italic;
+}
+.post-hover{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: #222222;
+}
+.li-post:hover{
+    background-color: pink;
+}
+.post-hover li{
+    padding: 8px 16px;
+    border-bottom: 1px solid gray;
+    box-sizing: border-box;
+}
+.li-post{
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+
+}
+.img-post{
+    float: left !important;
+    margin-right: 16px !important;
+    vertical-align: middle;
+    border-style: none;
+}
+.namePost{
+    color: deepskyblue;
+}
+
+/*button and Java script*/
+.btn-block{
+    background-color: pink;
+    color: deepskyblue;
+    font-size: 30px;
+}
+.btn-block:hover, .btn-block:focus, .btn-block:active {
+    border: none;
+    outline: none;
+    box-shadow: 2px 3px 5px #666666;
+    color: deepskyblue;
+    transition: all 0.9s;
+}
+input[type=text]:focus{
+    background-color: #ffffff;
+}
+label{
+    color: deepskyblue;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+/*Footer*/
+.tag-span a{
+    margin: 5px;
+    background-color: pink;
+    color: #444444;
+}
+.allRight{
+    opacity: 0.5;
+}
+.shadow-blue{
+    box-shadow: 0 .5rem 1rem pink;
+}
+
+/*Loader*/
+.loader {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: pink;
+    z-index: 99999;
+}
+.loader1{
+    width: 9.7%;
+    height: 19%;
+    display: block;
+    border: 2px solid transparent;
+    border-left: 2px solid deepskyblue;
+    position: absolute;
+    left: 45.5%;
+    top: 40.5%;
+    border-radius: 50%;
+    animation-name: rotate;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.1s;
+}
+.loader2{
+    width: 8%;
+    height: 15%;
+    display: block;
+    border: 2px solid transparent;
+    border-left: 2px solid deepskyblue;
+    position: absolute;
+    left: 46%;
+    top: 42%;
+    border-radius: 50%;
+    animation-name: rotate;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.2s;
+}
+.loader3{
+    width: 5%;
+    height: 9.5%;
+    display: block;
+    border: 2px solid transparent;
+    border-left: 2px solid deepskyblue;
+    position: absolute;
+    left: 46.5%;
+    top: 44.5%;
+    border-radius: 50%;
+    animation-name: rotate;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0.3s;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

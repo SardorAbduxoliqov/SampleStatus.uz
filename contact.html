@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="bootsrap/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/all.css">
+    <link rel="stylesheet" href="CSS/register.css">
+    <link rel="stylesheet" href="CSS/owl.carousel.min.css">
+    <link rel="stylesheet" href="CSS/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+
+<body>    
+    <div class="loader">
+        <div class="loader1"></div>
+        <div class="loader2"></div>
+        <div class="loader3"></div>
+    </div>
+<main class="container-fluid">
+<!--    header part-->
+    <header class="container-fluid navbar-expand-md" id="Home">
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Status</h4>
+                <span></span>
+                <a href="#">Find your right path!</a>
+                <div class="search">
+                    <input type="search" placeholder="Search for status" class="form-conntrol">
+                    <button class="searchbutton" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!--    nav part-->
+    <nav class="navbar navbar-expand-lg navbar-pink bg-white  mt-1">
+        <a href="register.html" class="navbar-brand register"><i class="fas fa-id-card"></i>Register and leave your
+            favourite
+            status!
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav position-sticky">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Galery</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Story</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<!--    Main cantact part-->
+    <section class="container-fluid col-lg-12">
+        <div class="row ">
+        <div class="col-lg-6 col-md-6 shadow-blue mt-3 mb-3 p-3 ">
+        <form action="#" class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" class="form-control" required id="name" placeholder="Your name...">
+            <label for="lastname">Lastname</label>
+            <input type="text" id="lastname" class="form-control" required placeholder="Lastname...">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email..." class="form-control">
+            <label for="number">Phone number</label>
+            <input type="number" placeholder="Phone number..." id="number" class="form-control">
+        </form>
+        </div>
+            <div class="col-lg-5 offset-1 col-md-6 shadow-blue mt-3 mb-3 p-3 ">
+                <form action="#" class="form-group">
+                    <label for="message">Write your message</label>
+                    <textarea  id="message" cols="50"  rows="10"  placeholder="Write your message..." required></textarea>
+                    <input type="submit" class="button" onclick="contactSubmit()" value="Submit">
+                    <p id="demo" style="color: deepskyblue; opacity: 0.6;"></p>
+                </form>
+            </div>
+      </div>
+    </section>
+
+
+<!--    Footer Part-->
+
+<footer>
+    <div class="container modal-footer">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 text-center">
+                <p><a href="#Galery" class="text-decoration-none">Galery</a></p>
+                <p><a href="#" class="text-decoration-none" >Team</a></p>
+                <p><a href="#" class="text-decoration-none">Pictures</a></p>
+                <p><a href="#" class="text-decoration-none">Stories</a></p>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <p><a href="#Stories" class="text-decoration-none">Stories</a></p>
+                <p><a href="#" class="text-decoration-none">Thoughts</a></p>
+                <p><a href="#" class="text-decoration-none">Psychology</a></p>
+                <p><a href="#" class="text-decoration-none">History</a></p>
+                <p><a href="#" class="text-decoration-none">Politics</a></p>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <h3 class="text-center text-monospace  post text-info">Watch out us in social sites</h3>
+                <a href="https://facebook.com" class="text-decoration-none p-2"><img src="image/facebook.svg" width="15%" alt=""></a>
+                <a href="https://instagram.com" class="text-decoration-none p-2"><img src="image/instared.svg" width="15%" alt=""></a>
+                <a href="https://telegram.org" class="text-decoration-none p-2"><img src="image/teleg.svg" width="15%" alt=""></a>
+            </div>
+            <div class="col-lg-3 col-md-6 tag-span">
+                <h1 class="text-center text-monospace  post text-info">Tags</h1>
+                <a href="">Team</a>
+                <a href="">book</a>
+                <a href="#">picture</a>
+                <a href="#">theme</a>
+                <a href="#">cinema</a>
+                <a href="#">flower</a>
+                <a href="#">papper</a>
+                <a href="#">pencil</a>
+                <a href="#">candle</a>
+                <a href="#">interesting</a>
+                <a href="#">activity</a>
+                <a href="#">enjoy</a>
+                <a href="#">hard work</a>
+                <a href="#">find way</a>
+                <a href="#">make money</a>
+                <a href="#">art</a>
+                <a href="#">flower</a>
+                <a href="#">cognitive</a>
+                <a href="#">design</a>
+                <a href="#">pop</a>
+                <a href="#">circle</a>
+                <a href="#">about</a>
+                <a href="#">mathematics</a>
+                <a href="#">psychology</a>
+                <a href="#">Islam</a>
+            </div>
+        </div>
+    </div>
+  </footer>
+</main>
+<p class="text-center text-info post allRight">© All rights reserved
+    <script>document.write(new Date().getFullYear());</script></p></main>
+</body>
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+    $(".loader").css("display", "none");
+ });
+ 
+
+
+ function contactSubmit(){
+     let name = document.getElementById("name").value;
+     let lastname = document.getElementById("lastname").value;
+     let contact = document.getElementById("number").value;
+     let email = document.getElementById("email").value;
+     let txt;
+    if(name == "" || !lastname || !contact || !email){
+        txt = "You did not fill blanks";
+    }else{
+        txt = "write your message"
+    }
+        document.getElementById("demo").innerHTML = txt;
+
+ }
+
+
+</script>
+</html>
